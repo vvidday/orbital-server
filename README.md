@@ -1,5 +1,7 @@
 # orbital-server
-Backend server to handle storing/caching feature for tweets. Go webserver, PostgresQL database & deployed on Elastic Beanstalk.
+Backend server to handle storing/caching feature for tweets. Go webserver, PostgresQL database & deployed on Elastic Beanstalk*.
+
+*Unfortunately, due to problems with the lack of https, the production is using the [main branch](https://github.com/vvidday/orbital-server/tree/main) that is deployed on Heroku. It is functionally the same, but swaps out [Echo](https://echo.labstack.com/) for [Gin](https://github.com/gin-gonic/gin) (due to issues with Heroku), and contains additional Heroku-specific configuration files. 
 
 # Endpoints
 The API exposes two GET endpoints, `/user` and `/tweets`:
